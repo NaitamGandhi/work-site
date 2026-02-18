@@ -51,3 +51,37 @@ setTimeout(function(){
       $("#work").removeClass("animated fadeIn");
     },1000);
 },1500);
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
+
+  if (!form) return;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault(); // stop redirect
+
+    status.textContent = "Sending...";
+
+    try {
+      const formData = new FormData(form);
+
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      if (response.ok) {
+        form.reset();
+        status.textContent = "Thanks for reaching out!";
+      } else {
+        status.textContent = "Something went wrong. Please try again.";
+      }
+
+    } catch (error) {
+      status.textContent = "Network error. Please try again.";
+    }
+  });
+});

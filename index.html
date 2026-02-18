@@ -217,13 +217,14 @@
             <section>
                 <h2>contact me</h2>
                 <p>
-                    <form action="https://formspree.io/f/mwvnqkjy" method="POST">
+                    <form id="contact-form" action="https://formspree.io/f/mwvnqkjy" method="POST">
                         <input type="text" name="name" placeholder="name" required>
                         <input type="email" name="email" placeholder="email" required><br>
                         <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
-                        <input type="hidden" name="_redirect" value="https://naitamgandhi.github.io/work-site/">
                         <button class="btn_one" type="submit">send</button>
-                    </form> 
+                    </form>
+
+                    <p id="form-status"></p>
                 </p>
             </section>
         </div>
