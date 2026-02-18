@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Naitam Gandhi.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>naitam gandhi.</h1>
+        <h2>Software Engineer X Data Scientist</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>experience.</h1>
+        <section>
+        <h2>FactSet Research — Software Engineer</h2>
+        <p>
+        Architected and scaled a secure distributed client-data storage and migration ecosystem serving firm-wide products, eliminating 10+ hours/week of on-call overhead across five teams while reducing migration downtime by 40% across 50+ enterprise clients.
+        </p>
+        <div id="used">
+            <div> C# / .NET </div>
+            <div> Python </div>
+            <div> SQL / PostgreSQL </div>
+            <div> AWS </div>
+            <div> REST APIs </div>
+            <div> Distributed Systems </div>
+        </div>
+        </section>
+
+        <section>
+        <h2>RWJ Hospital AI Research — Data Science Intern</h2>
+        <p>
+        Developed and validated a CNN-based ultrasound pathology detection model achieving ~97% precision/recall, standardizing preprocessing pipelines and extracting 100+ radiomic features to enhance clinical AI reliability.
+        </p>
+        <div id="used">
+            <div> Python </div>
+            <div> TensorFlow </div>
+            <div> PyRadiomics </div>
+            <div> NumPy / Pandas </div>
+            <div> Computer Vision </div>
+        </div>
+        </section>
+
+        <section>
+        <h2>ADP — Machine Learning Intern</h2>
+        <p>
+        Engineered and productionized a BERT transformer model classifying 5,000+ documents monthly with 92% F1-score, improving processing speed by 80% and eliminating third-party ML dependency entirely.
+        </p>
+        <div id="used">
+            <div> Python </div>
+            <div> BERT </div>
+            <div> HuggingFace </div>
+            <div> NLP </div>
+            <div> Model Optimization </div>
+        </div>
+        </section>
+
+        <h1>passion projects.</h1>
+
+        <section>
+        <h2>FIFA 2026 Predictor</h2>
+        <p>
+        Built an end-to-end ML pipeline integrating 150+ years of match data (45K+ games) with Elo metrics and PCA-driven ensembling, achieving 60–65% out-of-sample accuracy outperforming ranking baselines.
+        </p>
+        <div id="used">
+            <div> scikit-learn </div>
+            <div> PCA </div>
+            <div> Feature Engineering </div>
+            <div> Ensemble Models </div>
+            <div> Data Pipelines </div>
+        </div>
+        </section>
+
+        <section>
+        <h2>Spotify Recommendation Engine</h2>
+        <p>
+        Designed a full-stack recommendation system using SVD matrix factorization and collaborative filtering, deploying a Flask API with React frontend integrating Spotify & Genius APIs for real-time personalization.
+        </p>
+        <div id="used">
+            <div> Python </div>
+            <div> ReactJS </div>
+            <div> Flask </div>
+            <div> Matrix Factorization </div>
+            <div> REST APIs </div>
+        </div>
+        </section>
+
+        <section>
+        <h2>Crawlr — Founder & Full Stack Developer</h2>
+        <p>
+        Led a team to design and launch a dynamic NYC bar-crawling platform that generated optimized group routes using Google Places and Location APIs, delivering a production-ready MVP in 5 weeks through Agile execution and structured sprint planning.
+        </p>
+        <div id="used">
+            <div> Project Manager </div>
+            <div> ReactJS </div>
+            <div> Google APIs </div>
+            <div> Agile / SCRUM </div>
+        </div>
+        </section>
+
+        <section>
+        <h2>Campus Companion Finder — Data Science Project</h2>
+        <p>
+        Engineered a data-driven personality clustering system analyzing 5,000+ student responses using agglomerative clustering and dendrogram visualization, improving student matching and campus engagement through interpretable ML insights.
+        </p>
+        <div id="used">
+            <div> Python </div>
+            <div> Clustering Algorithms </div>
+            <div> Agglomerative Clustering </div>
+            <div> Data Visualization </div>
+            <div> Feature Scaling </div>
+            <div> Statistical Analysis </div>
+        </div>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <section>
+                <h1>who am i?</h1>
+                <p>
+                    I’m a full-stack software engineer who builds scalable, production-grade distributed systems powering enterprise data platforms. I specialize in designing backend architectures, secure APIs, high-throughput pipelines, and automation systems that eliminate operational overhead while improving reliability at scale.
+                </p>
+                <p>
+                    I’m also a data scientist in pursuit of building intelligent systems that learn, predict, and optimize real-world decisions. From deep learning in medical imaging to large-scale predictive modeling and ML pipelines, I aim to bridge software engineering rigor with statistical intelligence to build AI that operates in production—not just in notebooks.
+                </p>
+            </section>
+            <section>
+                <h1>skills</h1>
+                <p>
+                    Programming: Python, C#, C++, R, JavaScript  
+                </p>
+                <p> 
+                    Frameworks: .NET, ReactJS, Flask, Node.js  
+                </p>
+                <p>
+                    ML/AI: Deep Learning (CNNs, Transformers), NLP (BERT), scikit-learn, TensorFlow, PyTorch 
+                </p>
+                <p>
+                    Data: SQL, PostgreSQL, MongoDB, ETL Pipelines  
+                </p>
+                <p>
+                    Cloud & DevOps: AWS, Docker, Terraform, Linux  
+                </p>
+                <p>
+                    Analytics: Statistical Modeling, A/B Testing, Feature Engineering, PCA
+                </p>
+
+                <h1>education</h1>
+                <p>
+                    University of Pennsylvania — M.S. Data Science (GPA: 4.0)
+                </p>
+                <p>
+                    New Jersey Institute of Technology — B.S. Computer Science, Minor in Applied Statistics (GPA: 3.9)
+                </p>
+
+                <h1>highlights</h1>
+                <p>
+                    AWS Cloud Practitioner  
+                </p>
+                <p>
+                    4× Dean’s List Recognition
+                </p>
+                <p> 
+                    Awarded Top 5% Project Manager (Capstone Program, 2022)
+                </p>
+                <p>
+                    2020 Hackathon Winner
+                </p>
+                <p>
+                    2020 PMINJ Scholarship Recipient
+                </p>
+                <p>
+                    All-Academic AKSi
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form action="https://formspree.io/f/mwvnqkjy" method="POST">
+                        <input type="text" name="name" placeholder="name" required>
+                        <input type="email" name="email" placeholder="email" required><br>
+                        <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                        <input type="hidden" name="_redirect" value="http://127.0.0.1:5500/index.html">
+                        <button class="btn_one" type="submit">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            &copy; naitam gandhi
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
